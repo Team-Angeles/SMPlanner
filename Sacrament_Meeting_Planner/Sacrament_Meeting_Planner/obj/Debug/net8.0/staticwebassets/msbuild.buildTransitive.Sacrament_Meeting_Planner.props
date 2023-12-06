@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\Sacrament_Meeting_Planner.props" />
+</Project>
