@@ -9,14 +9,21 @@
 <p>
     <a asp-action="Create">Create New</a>
 </p>
+
+<form asp-controller="Meetings" asp-action="Index" method="get">
+    <p>
+        Leader: <input type="text" name="SearchString" />
+        <input type="submit" value="Filter" />
+    </p>
+</form>
 <table class="table">
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.DateOfMeeting)
+                <a asp-action="Index" asp-route-sortOrder="@ViewData["DateSortParm"]">@Html.DisplayNameFor(model => model.DateOfMeeting)</a>
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Leader)
+                <a asp-action="Index" asp-route-sortOrder="@ViewData["LeaderSortParm"]">@Html.DisplayNameFor(model => model.Leader)</a>
             </th>
             <!-- 
             <th>

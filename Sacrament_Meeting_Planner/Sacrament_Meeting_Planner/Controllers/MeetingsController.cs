@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Sacrament_Meeting_Planner.Data;
 using Sacrament_Meeting_Planner.Models;
@@ -20,9 +15,36 @@ namespace Sacrament_Meeting_Planner.Controllers
         }
 
         // GET: Meetings
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string sortOrder, string searchString)
         {
-            return View(await _context.Meetings.ToListAsync());
+            ViewData["LeaderSortParm"] = String.IsNullOrEmpty(sortOrder) ? "leader_desc" : "";
+            ViewData["DateSortParm"] = sortOrder == "date" ? "date_desc" : "date";
+            ViewData["CurrentFilter"] = searchString;
+
+            var meetings = from m in _context.Meetings select m;
+
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                meetings = meetings.Where(m => m.Leader!.Contains(searchString));
+            }
+
+            switch (sortOrder)
+            {
+                case "leader_desc":
+                    meetings = meetings.OrderByDescending(m => m.Leader);
+                    break;
+                case "date":
+                    meetings = meetings.OrderBy(m => m.DateOfMeeting);
+                    break;
+                case "date_desc":
+                    meetings = meetings.OrderByDescending(m => m.DateOfMeeting);
+                    break;
+                default:
+                    meetings = meetings.OrderBy(m => m.Leader);
+                    break;
+            }
+
+            return View(await meetings.AsNoTracking().ToListAsync());
         }
 
         // GET: Meetings/Details/5
