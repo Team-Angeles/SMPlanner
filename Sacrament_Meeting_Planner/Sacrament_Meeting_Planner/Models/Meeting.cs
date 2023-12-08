@@ -9,34 +9,52 @@ namespace Sacrament_Meeting_Planner.Models
         [Required]
         [DataType(DataType.Date)]
         [Display(Name = "Meeting Date")]
-        public DateTime DateOfMeeting { get; set; }
+        [CustomValidation(typeof(Meeting), nameof(MeetingDateValidation))]
+        public required DateTime DateOfMeeting { get; set; }
 
         [Required]
         [Display(Name = "Conducting Leader")]
-        public string Leader { get; set; }
+        [StringLength(50, MinimumLength = 2, ErrorMessage = "Conducting leader's name must be between 2 and 50 characters.")]
+        public required string Leader { get; set; }
 
         [Required]
         [Display(Name = "Opening Hymn")]
-        public string OpeningHymn { get; set; }
+        [RegularExpression(@"^[A-Za-z0-9\s]+$", ErrorMessage = "Invalid hymn name.")]
+        public required string OpeningHymn { get; set; }
 
         [Required]
         [Display(Name = "Sacrament Hymn")]
-        public string SacramentHymn { get; set; }
+        [RegularExpression(@"^[A-Za-z0-9\s]+$", ErrorMessage = "Invalid hymn name.")]
+        public required string SacramentHymn { get; set; }
 
         [Required]
         [Display(Name = "Closing Hymn")]
-        public string ClosingHymn { get; set; }
+        [RegularExpression(@"^[A-Za-z0-9\s]+$", ErrorMessage = "Invalid hymn name.")]
+        public required string ClosingHymn { get; set; }
+
         [Display(Name = "Intermediate Hymn")]
-        public string IntermediateNumber { get; set; } = null;
+        [RegularExpression(@"^[A-Za-z0-9\s]+$", ErrorMessage = "Invalid hymn name.")]
+        public string? IntermediateNumber { get; set; } = null;
 
         [Required]
         [Display(Name = "Opening Prayer")]
-        public string OpeningPrayer { get; set; }
+        [StringLength(50, MinimumLength = 2, ErrorMessage = "Prayer name must be between 2 and 50 characters.")]
+        public required string OpeningPrayer { get; set; }
 
         [Required]
         [Display(Name = "Closing Prayer")]
-        public string ClosingPrayer { get; set; }
+        [StringLength(50, MinimumLength = 2, ErrorMessage = "Prayer name must be between 2 and 50 characters.")]
+        public required string ClosingPrayer { get; set; }
 
         public ICollection<Speaker> MeetingSpeakers { get; set; } = new List<Speaker>();
+
+        public static ValidationResult MeetingDateValidation(DateTime meetingDate, ValidationContext validationContext)
+        {
+            if (meetingDate.Date < DateTime.Now.Date)
+            {
+                return new ValidationResult("Meeting date cannot be in the past.");
+            }
+            return ValidationResult.Success!;
+        }
     }
 }
