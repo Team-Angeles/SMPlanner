@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Sacrament_Meeting_Planner.Models
 {
@@ -18,5 +19,7 @@ namespace Sacrament_Meeting_Planner.Models
         public int SpeakerPosition { get; set; }
         [Required]
         public string SpeakerName { get; set; }
+
+        //public ICollection<Meeting>meetings { get; set; } = new List<Meeting>();
     }
 }
