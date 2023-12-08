@@ -8028,23 +8028,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\fairy\\.nuget\\packages\\": {},
+    "C:\\Users\\ambri\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\fairy\\Source\\Repos\\SMPlanner\\Sacrament_Meeting_Planner\\Sacrament_Meeting_Planner\\Sacrament_Meeting_Planner.csproj",
+      "projectUniqueName": "C:\\Users\\ambri\\OneDrive\\Documents\\BYU-I\\Team Angeles\\Sacrament_Meeting_Planner\\Sacrament_Meeting_Planner\\Sacrament_Meeting_Planner.csproj",
       "projectName": "Sacrament_Meeting_Planner",
-      "projectPath": "C:\\Users\\fairy\\Source\\Repos\\SMPlanner\\Sacrament_Meeting_Planner\\Sacrament_Meeting_Planner\\Sacrament_Meeting_Planner.csproj",
-      "packagesPath": "C:\\Users\\fairy\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\fairy\\Source\\Repos\\SMPlanner\\Sacrament_Meeting_Planner\\Sacrament_Meeting_Planner\\obj\\",
+      "projectPath": "C:\\Users\\ambri\\OneDrive\\Documents\\BYU-I\\Team Angeles\\Sacrament_Meeting_Planner\\Sacrament_Meeting_Planner\\Sacrament_Meeting_Planner.csproj",
+      "packagesPath": "C:\\Users\\ambri\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ambri\\OneDrive\\Documents\\BYU-I\\Team Angeles\\Sacrament_Meeting_Planner\\Sacrament_Meeting_Planner\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\fairy\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ambri\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
