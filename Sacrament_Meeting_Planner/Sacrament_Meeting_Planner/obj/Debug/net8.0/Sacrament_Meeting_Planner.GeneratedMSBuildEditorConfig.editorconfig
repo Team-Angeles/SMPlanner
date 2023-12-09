@@ -17,59 +17,63 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Sacrament_Meeting_Planner
 build_property.RootNamespace = Sacrament_Meeting_Planner
-build_property.ProjectDir = C:\Users\ambri\OneDrive\Documents\BYU-I\Team Angeles\Sacrament_Meeting_Planner\Sacrament_Meeting_Planner\
+build_property.ProjectDir = C:\Users\fairy\source\repos\SMPlanner\Sacrament_Meeting_Planner\Sacrament_Meeting_Planner\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\ambri\OneDrive\Documents\BYU-I\Team Angeles\Sacrament_Meeting_Planner\Sacrament_Meeting_Planner
+build_property.MSBuildProjectDirectory = C:\Users\fairy\source\repos\SMPlanner\Sacrament_Meeting_Planner\Sacrament_Meeting_Planner
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/ambri/OneDrive/Documents/BYU-I/Team Angeles/Sacrament_Meeting_Planner/Sacrament_Meeting_Planner/Views/Home/Index.cshtml]
+[C:/Users/fairy/source/repos/SMPlanner/Sacrament_Meeting_Planner/Sacrament_Meeting_Planner/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ambri/OneDrive/Documents/BYU-I/Team Angeles/Sacrament_Meeting_Planner/Sacrament_Meeting_Planner/Views/Home/Privacy.cshtml]
+[C:/Users/fairy/source/repos/SMPlanner/Sacrament_Meeting_Planner/Sacrament_Meeting_Planner/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ambri/OneDrive/Documents/BYU-I/Team Angeles/Sacrament_Meeting_Planner/Sacrament_Meeting_Planner/Views/Meetings/Create.cshtml]
+[C:/Users/fairy/source/repos/SMPlanner/Sacrament_Meeting_Planner/Sacrament_Meeting_Planner/Views/Meetings/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVldGluZ3NcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ambri/OneDrive/Documents/BYU-I/Team Angeles/Sacrament_Meeting_Planner/Sacrament_Meeting_Planner/Views/Meetings/Delete.cshtml]
+[C:/Users/fairy/source/repos/SMPlanner/Sacrament_Meeting_Planner/Sacrament_Meeting_Planner/Views/Meetings/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVldGluZ3NcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ambri/OneDrive/Documents/BYU-I/Team Angeles/Sacrament_Meeting_Planner/Sacrament_Meeting_Planner/Views/Meetings/Details.cshtml]
+[C:/Users/fairy/source/repos/SMPlanner/Sacrament_Meeting_Planner/Sacrament_Meeting_Planner/Views/Meetings/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVldGluZ3NcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ambri/OneDrive/Documents/BYU-I/Team Angeles/Sacrament_Meeting_Planner/Sacrament_Meeting_Planner/Views/Meetings/Edit.cshtml]
+[C:/Users/fairy/source/repos/SMPlanner/Sacrament_Meeting_Planner/Sacrament_Meeting_Planner/Views/Meetings/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVldGluZ3NcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ambri/OneDrive/Documents/BYU-I/Team Angeles/Sacrament_Meeting_Planner/Sacrament_Meeting_Planner/Views/Meetings/Index.cshtml]
+[C:/Users/fairy/source/repos/SMPlanner/Sacrament_Meeting_Planner/Sacrament_Meeting_Planner/Views/Meetings/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVldGluZ3NcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ambri/OneDrive/Documents/BYU-I/Team Angeles/Sacrament_Meeting_Planner/Sacrament_Meeting_Planner/Views/Shared/Error.cshtml]
+[C:/Users/fairy/source/repos/SMPlanner/Sacrament_Meeting_Planner/Sacrament_Meeting_Planner/Views/Meetings/Speaker.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVldGluZ3NcU3BlYWtlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fairy/source/repos/SMPlanner/Sacrament_Meeting_Planner/Sacrament_Meeting_Planner/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ambri/OneDrive/Documents/BYU-I/Team Angeles/Sacrament_Meeting_Planner/Sacrament_Meeting_Planner/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/fairy/source/repos/SMPlanner/Sacrament_Meeting_Planner/Sacrament_Meeting_Planner/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ambri/OneDrive/Documents/BYU-I/Team Angeles/Sacrament_Meeting_Planner/Sacrament_Meeting_Planner/Views/_ViewImports.cshtml]
+[C:/Users/fairy/source/repos/SMPlanner/Sacrament_Meeting_Planner/Sacrament_Meeting_Planner/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ambri/OneDrive/Documents/BYU-I/Team Angeles/Sacrament_Meeting_Planner/Sacrament_Meeting_Planner/Views/_ViewStart.cshtml]
+[C:/Users/fairy/source/repos/SMPlanner/Sacrament_Meeting_Planner/Sacrament_Meeting_Planner/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ambri/OneDrive/Documents/BYU-I/Team Angeles/Sacrament_Meeting_Planner/Sacrament_Meeting_Planner/Views/Shared/_Layout.cshtml]
+[C:/Users/fairy/source/repos/SMPlanner/Sacrament_Meeting_Planner/Sacrament_Meeting_Planner/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-x4ptiukkq5
