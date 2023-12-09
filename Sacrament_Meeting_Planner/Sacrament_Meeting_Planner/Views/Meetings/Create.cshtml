@@ -1,4 +1,4 @@
-﻿@model Sacrament_Meeting_Planner.Models.Meeting
+@model Sacrament_Meeting_Planner.Models.Meeting
 
 @{
     ViewData["Title"] = "Create";
@@ -53,7 +53,12 @@
                 <span asp-validation-for="ClosingPrayer" class="text-danger"></span>
             </div>
             <div class="form-group">
+                <input type="button" value="+Add Speaker" id="SpeakerBtn" class="btn btn-primary" />
+            </div>
+            <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+            <div id="SpeakerList">
             </div>
         </form>
     </div>
@@ -64,5 +69,27 @@
 </div>
 
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    <script>
+        let speakerBtn = document.getElementById("SpeakerBtn");
+        let speakerList = document.getElementById("SpeakerList");
+
+        speakerBtn.addEventListener("click", addSpeaker)
+
+        let speakerTemplate = `
+                    <div class="form-group">
+                        <label class="control-label">Speaker Name</label>
+                        <input class="form-control" />
+                        <span class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label">Speaker Topic</label>
+                        <input class="form-control" />
+                        <span class="text-danger"></span>
+                    </div>`;
+        function addSpeaker() {
+            let speakerContainer = document.createElement("div");
+            speakerList.innerHTML += speakerTemplate;
+        }
+    </script>
+
 }
