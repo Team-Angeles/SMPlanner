@@ -1,8 +1,11 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Sacrament_Meeting_Planner"
+    "\\Sacrament_Meeting_Planner",
+    "\\Sacrament_Meeting_Planner\\Sacrament_Meeting_Planner",
+    "\\Sacrament_Meeting_Planner\\Sacrament_Meeting_Planner\\Views",
+    "\\Sacrament_Meeting_Planner\\Sacrament_Meeting_Planner\\Views\\Meetings"
   ],
-  "SelectedNode": "\\Sacrament_Meeting_Planner\\Sacrament_Meeting_Planner.sln",
+  "SelectedNode": "\\Sacrament_Meeting_Planner\\Sacrament_Meeting_Planner\\Views\\Meetings\\Create.cshtml",
   "PreviewInSolutionExplorer": false
 }

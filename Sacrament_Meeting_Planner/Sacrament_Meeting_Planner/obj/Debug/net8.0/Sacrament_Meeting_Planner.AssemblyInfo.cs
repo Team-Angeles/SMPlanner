@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Sacrament_Meeting_Planner")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+eb40831ef838c12a8721b32ec4ca8ef05e0f6d83")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f764f5714a49e38f6e3b382d8f8da359fe937bed")]
 [assembly: System.Reflection.AssemblyProductAttribute("Sacrament_Meeting_Planner")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Sacrament_Meeting_Planner")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

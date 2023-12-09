@@ -52,13 +52,13 @@
                 <input asp-for="ClosingPrayer" class="form-control" />
                 <span asp-validation-for="ClosingPrayer" class="text-danger"></span>
             </div>
+            <div id="SpeakerList">
+            </div>
             <div class="form-group">
                 <input type="button" value="+Add Speaker" id="SpeakerBtn" class="btn btn-primary" />
             </div>
             <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-primary" />
-            </div>
-            <div id="SpeakerList">
             </div>
         </form>
     </div>
@@ -70,26 +70,53 @@
 
 @section Scripts {
     <script>
-        let speakerBtn = document.getElementById("SpeakerBtn");
-        let speakerList = document.getElementById("SpeakerList");
+        document.addEventListener("DOMContentLoaded", function () {
+            let speakerBtn = document.getElementById("SpeakerBtn");
+            let speakerList = document.getElementById("SpeakerList");
 
-        speakerBtn.addEventListener("click", addSpeaker)
+            if (speakerBtn) {
+                speakerBtn.addEventListener("click", addSpeaker);
+            }
 
-        let speakerTemplate = `
-                    <div class="form-group">
-                        <label class="control-label">Speaker Name</label>
-                        <input class="form-control" />
-                        <span class="text-danger"></span>
-                    </div>
-                    <div class="form-group">
-                        <label class="control-label">Speaker Topic</label>
-                        <input class="form-control" />
-                        <span class="text-danger"></span>
-                    </div>`;
-        function addSpeaker() {
-            let speakerContainer = document.createElement("div");
-            speakerList.innerHTML += speakerTemplate;
-        }
+            if (speakerList) {
+                speakerList.addEventListener("click", function (event) {
+                    if (event.target && event.target.classList.contains("removeSpeaker")) {
+                        removeSpeaker(event.target.closest(".form-group"));
+                    }
+                });
+            }
+
+            let speakerCounter = 1;
+            let topicCounter = 1;
+
+            function addSpeaker() {
+                let speakerTemplate = `
+                        <div class="form-group">
+                            <label class="control-label">Speaker Name${speakerCounter}</label>
+                            <input class="form-control" id="speaker${speakerCounter}" value="" />
+                            <span class="text-danger"></span>
+
+                            <label class="control-label">Speaker Topic${topicCounter}</label>
+                            <input class="form-control" id="topic${topicCounter}" value="" />
+                            <span class="text-danger"></span>
+                            <input type="button" value="- Remove Speaker" class="btn btn-primary removeSpeaker" />
+                        </div>`;
+
+                if (speakerList) {
+                    speakerList.innerHTML += speakerTemplate;
+                }
+                speakerCounter++;
+                topicCounter++;
+            }
+
+            function removeSpeaker(speakerElement) {
+                if (speakerList && speakerElement) {
+                    speakerList.removeChild(speakerElement);
+                    speakerCounter--;
+                    topicCounter--;
+                }
+            }
+        });
     </script>
 
 }
